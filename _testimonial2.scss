@@ -1,0 +1,180 @@
+.ova-testimonial2 {
+	padding-top: 140px;
+	.slide-testimonial2 {
+		position: relative;
+		.owl-item {
+			&.active {
+				&.active-bgColor {
+                   .item {
+						.top {
+							background-color: #f7f7f7;
+						}
+						.bottom {
+							background-color: var(--primary);
+							.info-bottom {
+								.description {
+	                                color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+           .item {
+           	    position: relative;
+           	    margin-bottom: 64px;
+           	    transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				&:hover {
+					transition: all .3s ease;
+					-moz-transition: all .3s ease;
+					-o-transition: all .3s ease;
+				}
+
+				.testimonial2-img {
+					position: absolute;
+					left: 5.6% ;
+					top: 0;
+					z-index: 1;
+					img {
+						display: block;
+						width: 100%;
+						max-width: 300px;
+					}
+					@media screen and (max-width: 767px) {
+                        display: none;
+                    }
+	            }
+
+                .top {
+                	position: relative;
+					display: grid;
+           	        grid-template-columns: 31% 69%;
+                	padding: 45px 70px;
+                	background-color: #fff;
+                	@media screen and (max-width: 767px) {
+	           	    	grid-template-columns: 100%;
+	                    padding: 50px 40px; 
+	                }
+                    .info-top {
+                    	padding-left: 55px;
+                    	@media screen and (max-width: 767px) {
+		           	    	padding-left: 0; 
+		                }
+						.name {
+							margin: 0;
+							transition: all .3s ease;
+							-moz-transition: all .3s ease;
+							-o-transition: all .3s ease;
+				            color: #000;
+							font-weight: 500;
+							font-size: 30px;
+							font-family: var(--primary-font);
+							line-height: 38px;
+							padding-bottom: 9px;
+						}
+						.city {
+							margin: 0;
+							transition: all .3s ease;
+							-moz-transition: all .3s ease;
+							-o-transition: all .3s ease;
+							font-weight: 500;
+							font-size: 18px;
+						}
+					}
+                }
+
+                .bottom {
+                	padding: 45px 70px 95px 70px;
+                	position: relative;
+					display: grid;
+           	        grid-template-columns: 31% 69%;
+           	        background-color: #f7f7f7;
+           	        @media screen and (max-width: 767px) {
+	           	    	grid-template-columns: 100%;
+	                    padding: 50px 40px; 
+	                }
+                    .info-bottom {
+                    	padding-left: 55px;
+                    	@media screen and (max-width: 767px) {
+		           	    	padding-left: 0; 
+		                }
+           	            .description {
+							position: relative;
+							transition: all .3s ease;
+							-moz-transition: all .3s ease;
+							-o-transition: all .3s ease;
+							margin: 0;
+							color: var(--text);
+						    font-size: 18px;
+						    line-height: 26px;
+						    font-weight: 500;
+						    &:before {
+			                    position: absolute;
+			                    content: '';
+			                    width: 211px;
+			                    height: 1px;
+			                    left: 0;
+			                    bottom: -26px;
+			                    transition: all .3s ease;
+			                    background: #D7B679;
+			                    @media screen and (max-width: 767px) {
+				           	    	bottom: -12px;
+				                }
+			                }
+						}	
+					}
+                }
+            }
+	    }
+
+	   .owl-nav {
+			transition: all .3s ease; 
+			position: absolute;
+			right: 30px;
+			top: -140px;
+			display: flex;
+			justify-content: center;
+			filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.07));
+			.owl-prev, .owl-next {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 8px;
+			    width: 60px;
+			    height: 60px;
+				background-color: #fff ;
+				transition: all .3s ease;
+				font-size: 32px;
+				color: var(--text);
+				&:hover {
+					transition: all .3s ease;
+					background-color: var(--secondary);
+					color: #fff;
+				}
+			}
+		}
+	
+	    .owl-dots {
+	    	text-align: center;
+			.owl-dot {
+				outline: none;
+				span {
+					width: 10px;
+					height: 10px;
+					margin: 0 3px;
+					background: #EFEFEF;
+					display: block;
+					transition: opacity .2s ease;
+					border-radius: 50%;
+				}
+				&.active {
+					span {
+						background-color: var(--secondary);
+					}
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,176 @@
+.ova-testimonial {
+	.slide-testimonial {
+		position: relative;
+		.owl-item {
+           .item {
+           	    position: relative;
+           	    display: grid;
+           	    grid-template-columns: 62% 38%;
+           	    margin-top: 150px;
+           	    background-color: var(--primary);
+           	    padding: 66px 135px 150px 156px ;
+           	    transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+           	    @media screen and (max-width: 767px) {
+           	    	grid-template-columns: 100%;
+                    padding: 60px 40px 100px 40px;
+                    margin-top: 0;
+                }
+
+				&:hover {
+					transition: all .3s ease;
+					-moz-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					.info {
+						.name, .description {
+                            transition: all .3s ease;
+							-moz-transition: all .3s ease;
+							-o-transition: all .3s ease;
+						}
+					}
+				}
+
+				.info {
+					position: relative;
+					text-align: right;
+                    padding-right: 30px;
+                    @media screen and (max-width: 1024px) {
+	           	    	padding-right: 10px;
+                    }
+					i {
+						position: absolute;
+						transform: matrix(-1, 0, 0, 1, 0, 0);
+						left: 11.5%;
+						top: -42px;
+						color: rgba(255, 255, 255, 0.15);
+						font-size: 71px;
+						@media screen and (max-width: 1024px) {
+							font-size: 50px;
+	           	    	    top: -20px;
+	           	    	    left: 0;
+                        }				
+					}
+
+					.name {
+						margin: 0;
+						margin-bottom: 12px;
+						transition: all .3s ease;
+						-moz-transition: all .3s ease;
+						-o-transition: all .3s ease;
+			            color: #fff;
+						font-weight: bold;
+						font-size: 30px;
+						font-family: var(--primary-font);
+						line-height: 38px;
+						margin-bottom: 15px;
+						position: relative;
+						&:before {
+		                    position: absolute;
+		                    content: '';
+		                    width: 56px;
+		                    height: 1px;
+		                    right: 0;
+		                    bottom: -5px;
+		                    transition: all .5s ease;
+		                    background: rgba(215, 182, 121, 0.5);
+		                }
+					}
+
+					.description {
+						position: relative;
+						transition: all .3s ease;
+						-moz-transition: all .3s ease;
+						-o-transition: all .3s ease;
+						margin: 0;
+						color: #fff;
+					    font-size: 18px;
+					    font-weight: 500;
+					    &:before {
+		                    position: absolute;
+		                    content: '';
+		                    width: 211px;
+		                    height: 1px;
+		                    right: 0;
+		                    bottom: -25px;
+		                    transition: all .3s ease;
+		                    background: #D7B679;
+		                    @media screen and (max-width: 1024px) {
+								bottom: -12px;
+	                        }
+		                }
+					}
+
+                    .testimonial-img {
+						position: absolute;
+						right: -380px;
+						top: -216px;
+						img {
+							display: block;
+							width: 100%;
+							max-width: 331px;
+						}
+						@media screen and (max-width: 767px) {
+		           	    	display: none;
+		                }
+	                }
+				}
+            }
+	    }
+
+	   .owl-nav {
+			transition: all .3s ease;
+			.owl-prev, .owl-next {
+				position: absolute;
+				top: calc(50% + 34px);
+				width: 81px;
+				height: 86px;
+				transition: all .3s ease;
+				font-size: 32px;
+				color: #fff;
+				border-radius: 0;
+				background: rgba(255, 255, 255, 0.15);
+				&:hover {
+					transition: all .3s ease;
+					background-color: var(--secondary);
+					color: #fff;
+				}
+			}
+			.owl-prev {
+				left: 0;
+			}
+			.owl-next {
+				right: 0;
+			}
+	    }
+	
+	    .owl-dots {
+			position: absolute;
+		    right: 42%;
+			bottom: 40px;
+			transform: tranlate(-50%, -50%);
+			.owl-dot {
+				outline: none;
+				span {
+					width: 10px;
+					height: 10px;
+					margin: 0 3px;
+					background: rgba(255, 255, 255, 0.3);
+					display: block;
+					transition: opacity .2s ease;
+					border-radius: 50%;
+				}
+				&.active {
+					span {
+						background-color: var(--secondary);
+						opacity: 1;
+					}
+				}
+			}
+
+			@media screen and (max-width: 767px) {
+		      bottom: 25px; 
+		    }
+		}
+    }
+}
